@@ -1,0 +1,4 @@
+Tom|Software engineer|1995
+John Snow|Teacher|1997
+Maria Onitsuka|Actor|1993
+Emil|Football player|1987
