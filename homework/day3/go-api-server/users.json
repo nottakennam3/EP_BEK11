@@ -1,0 +1,29 @@
+{
+  "idCount": 4,
+  "users": [
+    {
+      "id": 1,
+      "username": "user1",
+      "password": "",
+      "userProfile": ""
+    },
+    {
+      "id": 2,
+      "username": "user2",
+      "password": "",
+      "userProfile": ""
+    },
+    {
+      "id": 3,
+      "username": "user3",
+      "password": "",
+      "userProfile": ""
+    },
+    {
+      "id": 4,
+      "username": "user4",
+      "password": "$2a$10$7T4mXZHPIuJUb2fh5Vo8EOaXoIfcvhbhy0VVQFlzTb2vVWdY8evn.",
+      "userProfile": "profile4"
+    }
+  ]
+}
