@@ -26,6 +26,21 @@ type JSONSchema struct {
 
 func NewJSONFileStorage(path string) (*JSONFileStorage, error) {
 	if _, err := os.Stat(path); err != nil {
+		if os.IsNotExist(err) {
+			return Init(path)
+		}
+		return nil, err
+	}
+	return &JSONFileStorage{path: path}, nil
+}
+
+func Init(path string) (*JSONFileStorage, error) {
+	data, err := json.Marshal(JSONSchema{})
+	if err != nil {
+		return nil, err
+	}
+	err = os.WriteFile(path, data, 0644)
+	if err != nil {
 		return nil, err
 	}
 	return &JSONFileStorage{path: path}, nil
